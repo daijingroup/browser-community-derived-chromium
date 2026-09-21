@@ -5,13 +5,13 @@
 ```text
 project: Brave Core
 repository: https://github.com/brave/brave-core
-revision: 9ab716daf80005ab38c0127d53136629a1b3d387
-brave_version: 1.95.51
-chromium_version: 151.0.7922.108
+revision: 973c5c8667ce80d2d3c227ef6e60df530eb26d35
+brave_version: 1.97.37
+chromium_version: 153.0.8010.37
 primary_repository_license: MPL-2.0
 ```
 
-Kiryra currently pins Chromium `151.0.7922.97`. Brave skipped that exact Chromium point release in the reference history used here, so source imported from this Brave revision MUST be rebased and validated against Kiryra's exact Chromium revision before it is enabled in a production build.
+Kiryra currently pins Chromium `153.0.8010.52`. The selected Brave Core snapshot is the final master commit immediately before Brave moved from Chromium 153 to Chromium 154, and it targets Chromium `153.0.8010.37`. The currently imported debounce and farbling primitive files are byte-identical between the prior M151 reference snapshot and this M153 reference snapshot. They still MUST be built and tested against Kiryra's exact Chromium `153.0.8010.52` revision before production enablement.
 
 ## Initial imports
 
