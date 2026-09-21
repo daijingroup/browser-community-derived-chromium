@@ -3,14 +3,14 @@ schema_version = 1
 [upstream]
 project = "Brave Core"
 repository = "https://github.com/brave/brave-core"
-revision = "9ab716daf80005ab38c0127d53136629a1b3d387"
-brave_version = "1.95.51"
-chromium_version = "151.0.7922.108"
+revision = "973c5c8667ce80d2d3c227ef6e60df530eb26d35"
+brave_version = "1.97.37"
+chromium_version = "153.0.8010.37"
 primary_license = "MPL-2.0"
 
 [target]
 product = "Kiryra"
-chromium_version = "151.0.7922.97"
+chromium_version = "153.0.8010.52"
 
 [[imports]]
 path = "components/debounce/core/common"
