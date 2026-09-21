@@ -1,0 +1,25 @@
+schema_version = 1
+
+[upstream]
+project = "Brave Core"
+repository = "https://github.com/brave/brave-core"
+revision = "9ab716daf80005ab38c0127d53136629a1b3d387"
+brave_version = "1.95.51"
+chromium_version = "151.0.7922.108"
+primary_license = "MPL-2.0"
+
+[target]
+product = "Kiryra"
+chromium_version = "151.0.7922.97"
+
+[[imports]]
+path = "components/debounce/core/common"
+purpose = "bounce-tracking/debounce common implementation"
+license = "MPL-2.0"
+status = "imported-unintegrated"
+
+[[imports]]
+path = "components/brave_shields/core/common/farbling_prng.h"
+purpose = "fingerprinting/farbling deterministic PRNG primitive"
+license = "MPL-2.0"
+status = "imported-unintegrated"
