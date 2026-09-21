@@ -9,12 +9,12 @@ This repository contains source, patches, and components derived from external C
 ### Brave Core
 
 - upstream: `brave/brave-core`
-- initial pinned revision: `9ab716daf80005ab38c0127d53136629a1b3d387`
-- Brave version at pin: `1.95.51`
-- Chromium baseline at pin: `151.0.7922.108`
-- Kiryra Chromium baseline: `151.0.7922.97`
+- initial pinned revision: `973c5c8667ce80d2d3c227ef6e60df530eb26d35`
+- Brave version at pin: `1.97.37`
+- Chromium baseline at pin: `153.0.8010.37`
+- Kiryra Chromium baseline: `153.0.8010.52`
 - primary upstream licence: MPL-2.0
-- status: imported source requires Kiryra rebase/integration validation against the Kiryra Chromium pin
+- status: imported source is byte-identical at the M153 Brave reference pin; Kiryra integration still requires build/test validation against the exact Kiryra Chromium pin
 
 Brave-derived privacy/security/browser-engineering code may be reused directly when its applicable licence permits it. Brave product services and ecosystem dependencies are not part of Kiryra.
 
