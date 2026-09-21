@@ -6,9 +6,9 @@ Selected source files in `brave/` are derived from Brave Core.
 
 Upstream project: Brave Core  
 Upstream repository: https://github.com/brave/brave-core  
-Initial pinned revision: `9ab716daf80005ab38c0127d53136629a1b3d387`  
-Brave version: `1.95.51`  
-Upstream Chromium version: `151.0.7922.108`
+Initial pinned revision: `973c5c8667ce80d2d3c227ef6e60df530eb26d35`  
+Brave version: `1.97.37`  
+Upstream Chromium version: `153.0.8010.37`
 
 Brave Core identifies MPL-2.0 as its repository licence. Imported files preserve their original Brave copyright and MPL-2.0 notices.
 
