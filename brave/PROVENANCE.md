@@ -32,6 +32,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/de_amp/core/de_amp_parser.{cc,h}` — MPL-covered KiTech adaptation of Brave's AMP detection/canonical URL parser. Brave body-sniffer, preferences, feature gating and browser interception are excluded.
 
+- `components/brave_shields/core/common/adblock/rs/` + `resolver/` — Brave's MPL-covered Rust/C++ adblock bridge and domain resolver. The higher-level Shields content/browser service, settings/UI, P3A, filter-list product plumbing, and component updater are excluded. The underlying `adblock` crate is recorded separately at v0.13.3 / revision `886d45dcf5283ce8eddc6d961e7dd27966ab23f2` and will be vendored only when Kiryra build integration is implemented.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

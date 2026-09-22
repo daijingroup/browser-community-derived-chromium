@@ -59,3 +59,17 @@ path = "components/de_amp/core/de_amp_parser.*"
 purpose = "MPL-covered extraction of Brave AMP detection and canonical-URL parsing logic; Brave interception/body-sniffer/prefs excluded"
 license = "MPL-2.0"
 status = "adapted-core-unintegrated"
+
+[[imports]]
+path = "components/brave_shields/core/common/adblock/rs + resolver"
+purpose = "Brave MPL-2.0 Rust/C++ bridge and domain resolver around the upstream adblock crate; Shields policy/UI/service layers excluded"
+license = "MPL-2.0"
+status = "imported-core-unintegrated"
+
+[[dependencies]]
+name = "adblock"
+version = "0.13.3"
+revision = "886d45dcf5283ce8eddc6d961e7dd27966ab23f2"
+source = "https://crates.io/crates/adblock"
+license = "MPL-2.0"
+status = "recorded-not-yet-vendored"
