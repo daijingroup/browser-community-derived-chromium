@@ -30,6 +30,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.{cc,h}` — MPL-covered KiTech adaptation preserving Brave's exception-list and fail-safe decision behavior while excluding Brave component-updater/service plumbing.
 
+- `components/de_amp/core/de_amp_parser.{cc,h}` — MPL-covered KiTech adaptation of Brave's AMP detection/canonical URL parser. Brave body-sniffer, preferences, feature gating and browser interception are excluded.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

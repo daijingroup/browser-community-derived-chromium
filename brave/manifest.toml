@@ -53,3 +53,9 @@ path = "components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.*
 purpose = "MPL-covered extraction of Brave HTTPS-upgrade exception parsing and fail-safe host decision logic without Brave updater/service integration"
 license = "MPL-2.0"
 status = "adapted-core-unintegrated"
+
+[[imports]]
+path = "components/de_amp/core/de_amp_parser.*"
+purpose = "MPL-covered extraction of Brave AMP detection and canonical-URL parsing logic; Brave interception/body-sniffer/prefs excluded"
+license = "MPL-2.0"
+status = "adapted-core-unintegrated"
