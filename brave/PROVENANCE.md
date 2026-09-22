@@ -27,7 +27,7 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 3. Preserve source-file copyright and licence headers.
 4. Record any non-MPL licences separately.
 5. Keep MPL-covered files and Kiryra modifications to those files available under MPL-2.0 when distributed.
-6. Remove, replace, or isolate Brave product/service dependencies before Kiryra integration.
+6. Import only sufficiently self-contained Brave code. If a candidate is materially coupled to Brave product/service/UI/account/telemetry plumbing, skip the import and implement the capability independently in Kiryra.
 7. Do not copy imported implementation into private KiTech files to avoid source/licence obligations.
 8. Rebase and test each imported component against the exact Kiryra Chromium pin.
 9. Record Kiryra-side integration patches separately from pristine imported source where practical.
