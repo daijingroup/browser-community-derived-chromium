@@ -4,6 +4,8 @@ Public/open-source community-derived layer used by Kiryra.
 
 This repository contains source, patches, and components derived from external Chromium browser projects. It is intentionally separate from KiTech-owned private browser code so provenance and licence obligations remain clear.
 
+This layer exists only when reuse makes Kiryra faster to build or easier to maintain. It does not define Kiryra product architecture, policy, defaults, naming, settings, or UX. A community component that increases long-term integration or maintenance cost should be replaced with a Kiryra-owned implementation.
+
 ## Current upstream sources
 
 ### Brave Core
