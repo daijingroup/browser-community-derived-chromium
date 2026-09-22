@@ -1,5 +1,10 @@
 schema_version = 1
 
+[harvest]
+status = "complete"
+scope = "self-contained privacy/security primitives only"
+completed_against_brave_revision = "973c5c8667ce80d2d3c227ef6e60df530eb26d35"
+
 [upstream]
 project = "Brave Core"
 repository = "https://github.com/brave/brave-core"

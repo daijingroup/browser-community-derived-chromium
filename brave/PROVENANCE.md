@@ -34,6 +34,14 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/brave_shields/core/common/adblock/rs/` + `resolver/` — Brave's MPL-covered Rust/C++ adblock bridge and domain resolver. The higher-level Shields content/browser service, settings/UI, P3A, filter-list product plumbing, and component updater are excluded. The underlying `adblock` crate is recorded separately at v0.13.3 / revision `886d45dcf5283ce8eddc6d961e7dd27966ab23f2` and will be vendored only when Kiryra build integration is implemented.
 
+## Harvest completion
+
+The initial Brave M153 code-harvesting pass is complete.
+
+Further Brave code MUST NOT be added merely to avoid implementing Kiryra functionality. New imports require a new review showing that the candidate is self-contained, licence-compatible, useful independently of Brave product plumbing, and materially better than a Kiryra-owned implementation.
+
+The following areas were reviewed and deliberately left for independent Kiryra implementation because their useful behavior is materially coupled to Brave product architecture: higher-level Shields orchestration/UI, full farbling integration, ephemeral storage, GPC network plumbing, component updating, P3A/telemetry, and Brave webcompat/product services.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

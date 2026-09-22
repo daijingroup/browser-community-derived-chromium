@@ -38,3 +38,32 @@ See:
 This repository may contain reusable privacy/security implementations from Brave, but Kiryra does not adopt Brave Rewards/BAT, Ads, Wallet, Search coupling, VPN, Leo/AI, News, Talk, Brave Sync, Brave-specific Tor product integration, referrals, promotions, branding, accounts, or service endpoints merely because source code is available.
 
 The authoritative policy is in `daijingroup/browser-spec`.
+
+## Brave harvest status
+
+The initial Brave M153 privacy/security harvest is complete at the pinned Brave Core revision.
+
+Imported or adapted community-derived primitives:
+
+- debounce common definitions and rule engine;
+- query-filter schema/data/matching/filtering core;
+- URL sanitization matcher/query-stripping core;
+- Global Privacy Control primitive;
+- HTTPS-upgrade exception-list decision core;
+- de-AMP detection/canonical-URL parser;
+- adblock Rust/C++ bridge and domain resolver;
+- farbling PRNG primitive.
+
+Kiryra intentionally does **not** import Brave's higher-level Shields/product framework. The following are Kiryra-owned implementation work:
+
+- Shields UI, settings, site panel, service factories and orchestration;
+- Brave component-updater integration;
+- P3A/Brave telemetry;
+- full farbling/fingerprinting integration beyond the isolated PRNG;
+- ephemeral-storage service as implemented through Shields;
+- Brave GPC network-delegate/product integration;
+- Brave webcompat/reporting and product exception plumbing;
+- Brave account, Sync, Search, Wallet, Rewards/BAT, Ads, VPN, AI, News, Talk, Tor-product, referral and promotional systems.
+
+The upstream Rust `adblock` crate used by the imported bridge is pinned in `brave/manifest.toml` and will be vendored during build integration rather than being treated as Brave product source.
+
