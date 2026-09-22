@@ -16,7 +16,7 @@ This repository contains source, patches, and components derived from external C
 - primary upstream licence: MPL-2.0
 - status: imported source is byte-identical at the M153 Brave reference pin; Kiryra integration still requires build/test validation against the exact Kiryra Chromium pin
 
-Brave-derived privacy/security/browser-engineering code may be reused directly when its applicable licence permits it. Brave product services and ecosystem dependencies are not part of Kiryra.
+Brave-derived privacy/security/browser-engineering code may be reused directly when its applicable licence permits it and the implementation is sufficiently self-contained. If a useful feature is materially entangled with Brave product plumbing, services, UI, telemetry, accounts, or ecosystem dependencies, it is not imported; Kiryra implements that capability independently.
 
 ## Licence model
 
