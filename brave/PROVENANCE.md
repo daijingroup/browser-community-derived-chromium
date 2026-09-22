@@ -22,6 +22,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/global_privacy_control/` — Global Privacy Control preference/enablement primitive. Imported atomically from the pinned M153 Brave snapshot; Kiryra integration will replace Brave-specific preference naming in an MPL-covered adaptation before enablement.
 
+- `components/query_filter/` — query-filter schema/data/matching/filtering core. Brave component installer, updater integration, pref namespace, and test plumbing are intentionally excluded; Kiryra will provide rule delivery and policy integration.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

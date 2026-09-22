@@ -29,3 +29,9 @@ path = "components/global_privacy_control"
 purpose = "Global Privacy Control preference and enablement primitive"
 license = "MPL-2.0"
 status = "imported-unintegrated"
+
+[[imports]]
+path = "components/query_filter"
+purpose = "tracking query-parameter rule schema, storage, matching, and filtering logic; Brave component-updater integration excluded"
+license = "MPL-2.0"
+status = "imported-core-unintegrated"
