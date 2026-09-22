@@ -26,6 +26,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/debounce/core/browser/debounce_rule.{cc,h}` — reusable debounce rule parser/application engine. Brave component updater, service factory, Shields-aware navigation throttle and product plumbing are excluded.
 
+- `components/url_sanitizer/core/common/url_sanitizer_core.{cc,h}` — MPL-covered KiTech adaptation of Brave URLSanitizerService matcher/query-stripping logic. Brave component updater, Mojo/Android bridge and product service are excluded.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

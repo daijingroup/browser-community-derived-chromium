@@ -41,3 +41,9 @@ path = "components/debounce/core/browser/debounce_rule.*"
 purpose = "bounce-tracking redirect rule parser and application engine; Brave service/updater/navigation integration excluded"
 license = "MPL-2.0"
 status = "imported-core-unintegrated"
+
+[[imports]]
+path = "components/url_sanitizer/core/common/url_sanitizer_core.*"
+purpose = "MPL-covered extraction of Brave URL matcher, tracking-parameter parsing, and sanitization logic without Brave updater/Mojo plumbing"
+license = "MPL-2.0"
+status = "adapted-core-unintegrated"
