@@ -35,3 +35,9 @@ path = "components/query_filter"
 purpose = "tracking query-parameter rule schema, storage, matching, and filtering logic; Brave component-updater integration excluded"
 license = "MPL-2.0"
 status = "imported-core-unintegrated"
+
+[[imports]]
+path = "components/debounce/core/browser/debounce_rule.*"
+purpose = "bounce-tracking redirect rule parser and application engine; Brave service/updater/navigation integration excluded"
+license = "MPL-2.0"
+status = "imported-core-unintegrated"

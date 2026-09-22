@@ -24,6 +24,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/query_filter/` — query-filter schema/data/matching/filtering core. Brave component installer, updater integration, pref namespace, and test plumbing are intentionally excluded; Kiryra will provide rule delivery and policy integration.
 
+- `components/debounce/core/browser/debounce_rule.{cc,h}` — reusable debounce rule parser/application engine. Brave component updater, service factory, Shields-aware navigation throttle and product plumbing are excluded.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.
