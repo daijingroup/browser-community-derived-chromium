@@ -23,3 +23,9 @@ path = "components/brave_shields/core/common/farbling_prng.h"
 purpose = "fingerprinting/farbling deterministic PRNG primitive"
 license = "MPL-2.0"
 status = "imported-unintegrated"
+
+[[imports]]
+path = "components/global_privacy_control"
+purpose = "Global Privacy Control preference and enablement primitive"
+license = "MPL-2.0"
+status = "imported-unintegrated"

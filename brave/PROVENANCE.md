@@ -20,6 +20,8 @@ Kiryra currently pins Chromium `153.0.8010.52`. The selected Brave Core snapshot
 
 The files are stored under `brave/` using their upstream-relative paths and are initially kept unchanged so copyright, attribution, and provenance are obvious.
 
+- `components/global_privacy_control/` — Global Privacy Control preference/enablement primitive. Imported atomically from the pinned M153 Brave snapshot; Kiryra integration will replace Brave-specific preference naming in an MPL-covered adaptation before enablement.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.
