@@ -28,6 +28,8 @@ The files are stored under `brave/` using their upstream-relative paths and are 
 
 - `components/url_sanitizer/core/common/url_sanitizer_core.{cc,h}` — MPL-covered KiTech adaptation of Brave URLSanitizerService matcher/query-stripping logic. Brave component updater, Mojo/Android bridge and product service are excluded.
 
+- `components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.{cc,h}` — MPL-covered KiTech adaptation preserving Brave's exception-list and fail-safe decision behavior while excluding Brave component-updater/service plumbing.
+
 ## Import rules
 
 1. Pin an immutable Brave revision.

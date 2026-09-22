@@ -47,3 +47,9 @@ path = "components/url_sanitizer/core/common/url_sanitizer_core.*"
 purpose = "MPL-covered extraction of Brave URL matcher, tracking-parameter parsing, and sanitization logic without Brave updater/Mojo plumbing"
 license = "MPL-2.0"
 status = "adapted-core-unintegrated"
+
+[[imports]]
+path = "components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.*"
+purpose = "MPL-covered extraction of Brave HTTPS-upgrade exception parsing and fail-safe host decision logic without Brave updater/service integration"
+license = "MPL-2.0"
+status = "adapted-core-unintegrated"
