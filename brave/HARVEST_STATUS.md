@@ -40,4 +40,12 @@ These are too coupled to Brave product architecture and will be implemented by K
 
 Harvested code is not equivalent to production enablement. Each component still requires Kiryra-owned integration, exact Chromium `153.0.8010.52` build validation, tests, rule/update-source decisions where applicable, and privacy-policy wiring.
 
+### Integrated
+
+| Capability | Kiryra wiring |
+|---|---|
+| Global Privacy Control | `browser-kitech-derived-chromium` `patches/0005-kiryra-integrate-global-privacy-control.patch`: renamed pref to Kiryra namespace, registered as a Kiryra profile pref (default enabled, inspectable at `chrome://prefs-internals`), and a `URLLoaderThrottle` sends `Sec-GPC: 1` per the harvested primitive's decision. Not yet wired to a Kiryra-owned enterprise policy or user-facing settings toggle; both are deferred to the phase 06 browser-experience/settings work. |
+
+Everything else in this table remains unintegrated.
+
 No further Brave feature harvesting is part of the current scope.

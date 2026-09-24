@@ -20,7 +20,7 @@ Kiryra currently pins Chromium `153.0.8010.52`. The selected Brave Core snapshot
 
 The files are stored under `brave/` using their upstream-relative paths and are initially kept unchanged so copyright, attribution, and provenance are obvious.
 
-- `components/global_privacy_control/` — Global Privacy Control preference/enablement primitive. Imported atomically from the pinned M153 Brave snapshot; Kiryra integration will replace Brave-specific preference naming in an MPL-covered adaptation before enablement.
+- `components/global_privacy_control/` — Global Privacy Control preference/enablement primitive. Imported atomically from the pinned M153 Brave snapshot. Kiryra integration (MPL-covered adaptation): the preference was renamed from `brave.global_privacy_control_enabled` to `kiryra.privacy.global_privacy_control_enabled`, and the intra-component include path was adjusted from `brave/components/...` to `components/...` because Kiryra does not reproduce Brave's `brave/` checkout layout. Logic is otherwise unchanged from upstream. See `browser-kitech-derived-chromium` `patches/0005-kiryra-integrate-global-privacy-control.patch` for the Kiryra-owned wiring (pref registration, `Sec-GPC` header throttle).
 
 - `components/query_filter/` — query-filter schema/data/matching/filtering core. Brave component installer, updater integration, pref namespace, and test plumbing are intentionally excluded; Kiryra will provide rule delivery and policy integration.
 

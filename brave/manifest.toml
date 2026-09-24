@@ -33,7 +33,8 @@ status = "imported-unintegrated"
 path = "components/global_privacy_control"
 purpose = "Global Privacy Control preference and enablement primitive"
 license = "MPL-2.0"
-status = "imported-unintegrated"
+status = "integrated"
+kiryra_integration = "browser-kitech-derived-chromium patches/0005-kiryra-integrate-global-privacy-control.patch"
 
 [[imports]]
 path = "components/query_filter"

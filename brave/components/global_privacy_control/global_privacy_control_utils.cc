@@ -3,9 +3,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-#include "brave/components/global_privacy_control/global_privacy_control_utils.h"
+#include "components/global_privacy_control/global_privacy_control_utils.h"
 
-#include "brave/components/global_privacy_control/pref_names.h"
+// Kiryra places this harvested component at components/global_privacy_control
+// rather than reproducing Brave's brave/components/... checkout layout, so
+// the intra-component include path is adapted accordingly. Logic is
+// unchanged from the pinned upstream Brave revision.
+#include "components/global_privacy_control/pref_names.h"
 #include "components/prefs/pref_service.h"
 
 namespace global_privacy_control {

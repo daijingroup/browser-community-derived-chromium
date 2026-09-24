@@ -8,8 +8,12 @@
 
 namespace global_privacy_control {
 
+// Kiryra-owned preference name. Adapted from the upstream Brave primitive
+// ("brave.global_privacy_control_enabled") per Kiryra integration policy:
+// Kiryra owns the resulting privacy settings model rather than exposing
+// Brave's product/pref namespace (browser-spec 05).
 inline constexpr char kGlobalPrivacyControlEnabled[] =
-    "brave.global_privacy_control_enabled";
+    "kiryra.privacy.global_privacy_control_enabled";
 
 }  // namespace global_privacy_control
 
