@@ -8,7 +8,7 @@
  * brave/brave-core@973c5c8667ce80d2d3c227ef6e60df530eb26d35.
  */
 
-#include "brave/components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.h"
+#include "components/https_upgrade_exceptions/core/https_upgrade_exceptions_core.h"
 
 #include <utility>
 #include <vector>
