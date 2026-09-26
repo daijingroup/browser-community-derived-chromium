@@ -44,7 +44,8 @@ Harvested code is not equivalent to production enablement. Each component still 
 
 | Capability | Kiryra wiring |
 |---|---|
-| Global Privacy Control | `browser-kitech-derived-chromium` `patches/0005-kiryra-integrate-global-privacy-control.patch`: renamed pref to Kiryra namespace, registered as a Kiryra profile pref (default enabled, inspectable at `chrome://prefs-internals`), and a `URLLoaderThrottle` sends `Sec-GPC: 1` per the harvested primitive's decision. Not yet wired to a Kiryra-owned enterprise policy or user-facing settings toggle; both are deferred to the phase 06 browser-experience/settings work. |
+| Global Privacy Control | `browser-kitech-derived-chromium` `patches/0006-kiryra-integrate-global-privacy-control.patch`: renamed pref to Kiryra namespace, registered as a Kiryra profile pref (default enabled, inspectable at `chrome://prefs-internals`), and a `URLLoaderThrottle` sends `Sec-GPC: 1` per the harvested primitive's decision. Not yet wired to a Kiryra-owned enterprise policy or user-facing settings toggle; both are deferred to the phase 06 browser-experience/settings work. |
+| Bounce/debounce | `browser-kitech-derived-chromium` `patches/0008-kiryra-integrate-bounce-tracking.patch`: `debounce_rule.h/cc` adapted (Kiryra path layout, pref renamed to `kiryra.privacy.debounce_enabled`), copied into `components/debounce/core/browser` and `components/debounce/core/common`. `KiryraDebounceNavigationThrottle` wired into `CreateAndAddChromeThrottlesForNavigation`. Bundled initial ruleset of 7 common tracking redirectors; component-updater-driven rule refresh deferred to spec 06. Not yet exposed via user-facing settings toggle. |
 
 Everything else in this table remains unintegrated.
 
