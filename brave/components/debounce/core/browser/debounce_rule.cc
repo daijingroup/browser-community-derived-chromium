@@ -3,7 +3,9 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#include "brave/components/debounce/core/browser/debounce_rule.h"
+// Kiryra: self-include path adapted from brave/components/... to components/...
+// to match integration destination. Logic unchanged from pinned Brave revision.
+#include "components/debounce/core/browser/debounce_rule.h"
 
 #include <memory>
 #include <optional>

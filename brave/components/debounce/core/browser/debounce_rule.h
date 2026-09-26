@@ -3,8 +3,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this file,
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
-#ifndef BRAVE_COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_
-#define BRAVE_COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_
+// Kiryra: include guard and self-include path adapted from brave/components/...
+// to components/... to match the integration destination in Chromium src.
+// Logic is unchanged from the pinned upstream Brave revision.
+
+#ifndef COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_
+#define COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_
 
 #include <memory>
 #include <string>
@@ -87,4 +91,4 @@ class DebounceRule {
 
 }  // namespace debounce
 
-#endif  // BRAVE_COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_
+#endif  // COMPONENTS_DEBOUNCE_CORE_BROWSER_DEBOUNCE_RULE_H_

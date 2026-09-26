@@ -2,28 +2,25 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at https://mozilla.org/MPL/2.0/.
+#
+# Kiryra: brave_component_updater and brave_extensions deps replaced with
+# the Chromium equivalents that the rule parser actually needs.
+# debounce_component_installer and debounce_service are not integrated here;
+# Kiryra supplies its own wiring via chrome/browser/debounce/.
 
 source_set("browser") {
   sources = [
-    "debounce_component_installer.cc",
-    "debounce_component_installer.h",
     "debounce_rule.cc",
     "debounce_rule.h",
-    "debounce_service.cc",
-    "debounce_service.h",
   ]
 
   deps = [
     "//base",
-    "//brave/components/brave_component_updater/browser",
-    "//brave/components/debounce/core/common",
-    "//brave/extensions:common",
-    "//components/keyed_service/core",
+    "//components/debounce/core/common",
     "//components/prefs",
-    "//components/user_prefs",
+    "//extensions/common",
     "//net",
     "//third_party/re2",
-    "//ui/base",
     "//url",
   ]
 }
